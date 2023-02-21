@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(.//background.jpg);
+    background-repeat:repeat-x;
+    background-size: 100% 100%;
+    
+
+}
+.car{
+    position: absolute;
+    top: 40%;
+   
+}
+.car img{
+    margin-top: 150px;
+    width: 43%;
+    height: auto;
+    animation: audi infinite ease-in 9s;
+
+}
+@keyframes audi {
+    0%{
+    margin-left: 0%;
+    opacity: 2;
+    }
+    50%{
+        opacity: 2;
+    }
+    100%{
+        margin-left: 100%;
+        opacity: 1;
+
+    }
+    
+}
+.wheel{
+    left: 6%;
+    bottom: 155px;
+    transform: translateX(-50%);
+    position: absolute;
+    animation: bothwheel infinite ease-in 9s;
+}
+.wheel img{
+   width: 66px;
+    height: auto;
+    animation: wheel 0.5s linear infinite;
+}
+
+.back-wheel{
+    left: -160px;
+    position: absolute;
+    
+}
+.front-wheel{
+    left: 75px;
+    position: absolute;
+}
+ @keyframes bothwheel {
+    0%{
+        margin-left: 10%;
+        
+        }
+        100%{
+            margin-left: 80%;
+        }
+ }
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
